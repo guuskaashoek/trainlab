@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'LineFont';
+    src: url('../assets/fonts/line.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NormalFont';
+    src: url('../assets/fonts/normal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SimpleFont';
+    src: url('../assets/fonts/simple.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --none: #00000000;
+    --white: #ffffff;
+    --white-70: #ffffffba;
+    --white-50: #ffffff85;
+    --white-10: #ffffff30;
+    --black: #000000;
+    --black-70: #000000ba;
+    --black-50: #00000085;
+    --black-10: #00000030;
+    --gray: #4f4f4f;
+    --gray-70: #4f4f4fba;
+    --gray-50: #4f4f4f85;
+    --gray-10: #4f4f4f30;
+    --rood: #EF5343;
+    --rood-50: #ef534385;
+    --orange: #F29841;
+    --orange-50: #F2984185;
+    --geel: #EDD045;
+    --geel-50: #EDD04585;
+    --groen: #BBE555;
+    --groen-50: #BBE55585;
+    --licht-blouw: #A6D9D8;
+    --licht-blouw-50: #A6D9D885;
+    --donker-blouw: #4374EF;
+    --donker-blouw-50: #4374EF85;
+    --paars: #BA47EA;
+    --paars-50: #BA47EA85;
+
+    --font-line: 'LineFont';
+    --font-normal: 'NormalFont';
+    --font-simple: 'SimpleFont';
+}
+
+* {
+    shape-rendering: crispEdges;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="number"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#countdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}

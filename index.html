@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainlab</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p id="countdown"></p>
+    <form id="trainForm">
+        <label for="trainNumber">Treinstelnummer:</label>
+        <input type="number" id="trainNumber" name="trainNumber" required>
+        <input type="submit" value="Submit">
+       </form> 
+    <div id="error" style="display: none; color: red;"></div>
+    <p id="streak"></p>
+    <p id="highscore"></p>
+    <p id="totalNewTrains"></p>
+    <p id="totalOldTrains"></p>
+    <ul id="mostFrequentTrain"></ul>
+
+    <button id="resetButton">Reset treindata</button>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
