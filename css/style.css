@@ -59,51 +59,71 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    background-color: #FFF;
+    color: #003082; /* NS Blue */
+    margin: 50px;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    font-weight: bold;
 }
 
-form {
-    margin-bottom: 2em;
+#trainForm {
+    background-color: #FFC61E; /* NS Yellow */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-label, input {
+#trainForm label, #trainForm input {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
 }
 
-input[type="number"] {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    padding: 0.5em 1em;
+#trainForm input[type="submit"] {
+    background-color: #003082; /* NS Blue */
+    color: #FFF;
     border: none;
-    border-radius: 4px;
-    background-color: #007BFF;
-    color: white;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 7.5px;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+#trainForm input[type="submit"]:hover {
+    background-color: #0052A5; /* Darker NS Blue */
 }
 
-p {
-    font-size: 1.2em;
+#resetButton {
+    background-color: #FFC61E; /* NS Yellow */
+    color: #003082; /* NS Blue */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+#resetButton:hover {
+    background-color: #FFD633; /* Lighter NS Yellow */
+}
+
+#error {
+    border: 4px solid #FF0000;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p, ul {
+    padding: 10px 20px;
 }
 
 #countdown {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    right: 70px;
     padding: 1em;
 }
